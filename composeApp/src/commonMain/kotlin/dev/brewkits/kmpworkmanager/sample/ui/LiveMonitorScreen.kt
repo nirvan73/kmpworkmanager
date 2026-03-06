@@ -35,7 +35,6 @@ fun LiveMonitorScreen(
     val stats by TaskStatsManager.stats.collectAsState()
 
     // Auto-refresh every 2 seconds
-    
     LaunchedEffect(Unit) {
         while (isActive) {
             isRefreshing = true
